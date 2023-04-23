@@ -20,7 +20,7 @@ window.onload = () => {
       case "button":
         return "touch_app";
       case "video":
-        return "play_video";
+        return "play_arrow";
       default:
         return "north_east";
   }}
@@ -33,8 +33,10 @@ window.onload = () => {
 
     animateTrailer(e, interacting);
 
+    trailer.dataset.type = interacting ? interactable.dataset.type : "";
+
     if (interacting) {
-      icon.innerHTML = getTrailersClass(interactable.dataset)  
+      icon.innerHTML = getTrailersClass(interactable.dataset.type);  
     }
   }
 }

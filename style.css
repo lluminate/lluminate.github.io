@@ -61,11 +61,14 @@ h1 > .gradientText{
     color:black;
     font-size: 80%;
     display: inline-block;
-    font-variation-settings:
-    'FILL' 0,
-     'wght' 400,
-     'GRAD' 200,
-     'opsz' 24;
+    font-variation-settings:'FILL' 0, 'wght' 400, 'GRAD' 200, 'opsz' 24;
+
+     opacity: 0;
+     transition: opacity 400ms ease;
+}
+
+#trailer:not([data-type=""]) > #trailer-icon{
+    opacity: 1;
 }
 
 #contact{
@@ -78,7 +81,6 @@ h1 > .gradientText{
 }
 
 img{
-    aspect-ratio: 1 / 1.5;
     width: clamp(120px, 40vmin, 600px);
     opacity: 0.4;
     transition: opacity 400ms ease, transform 400ms ease;
@@ -90,7 +92,7 @@ img:hover{
 }
 
 .image-container {
-    aspect-ratio: 1 / 1.5;
+    aspect-ratio: 1 / 1;
     width: 300px;
     overflow: hidden;
 }
