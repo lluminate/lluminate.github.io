@@ -1,8 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Poltawski+Nowy&display=swap');
+
 body{
-    background-color: black;
+    background-color: rgb(20, 20, 20);
     color: white;
+    margin: 0;
+    height: 100vh;
+}
+
+body:hover > #trailer{
+    opacity: 1;
+}
+
+#trailer{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 20px;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100000;
+
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 500ms ease;
 }
 
 h1{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Karla', sans-serif;
+}
+
+p{
+    font-family: 'Poltawski Nowy', serif;
 }
