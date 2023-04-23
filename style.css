@@ -1,12 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&family=Lora&family=Poltawski+Nowy&family=Poppins:wght@500&family=Roboto+Slab&display=swap');
 
-/*
-
 *{
     cursor: none;
 }
-
-*/
 
 body{
     background-color: rgb(20, 20, 20);
@@ -24,6 +20,10 @@ body{
 }
 
 body:hover > #trailer{
+    opacity: 0.2;
+}
+
+body:hover > #cursor{
     opacity: 1;
 }
 
@@ -40,14 +40,15 @@ h1 > .gradientText{
         45deg,
         #ee0979,#ff6a00
     );
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     white-space: nowrap;
 }
 
 #trailer{
-    height: 15px;
-    width: 15px;
+    height: 20px;
+    width: 20px;
     background-color: white;
     border-radius: 20px;
 
@@ -64,6 +65,22 @@ h1 > .gradientText{
     place-items: center;
 }
 
+#cursor{
+    height: 5px;
+    width: 5px;
+    background-color: white;
+    border-radius: 5px;
+
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1001;
+
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 500ms ease;
+}
+
 #trailer-icon{
     color:black;
     font-size: 30%;
@@ -78,13 +95,15 @@ h1 > .gradientText{
     opacity: 1;
 }
 
-#contact{
+.button{
     background-color: rgb(20,20,20);
     color: white;
     border: 1px solid white;
     padding: 10px;
     margin: 10px;
     font-family: 'Karla', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
 }
 
 img{

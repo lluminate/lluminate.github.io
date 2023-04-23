@@ -6,18 +6,20 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <script src="index.js"></script>
+        <script src="mousetrailer.js"></script>
     </head>
 
     <body>
         <div id="trailer">
-            <span id="trailer-icon" class="material-icons">touch_app</span>
+            <i id="trailer-icon" class="material-icons"></i>
         </div>
+        <div id="cursor"></div>
 
         <h1>Hi! My name is <span class="gradientText">Victor</span></h1>
         <p>I am a student</p>
 
-        <button type="button" onclick="toggleContact()" data-clicked="false" data-type="button" id="contact" class="interactable">Contact</button>
-        
+        <button type="button" onclick="toggleContact()" data-clicked="false" data-type="button" id="contact" class="interactable button">Contact</button>
+        <a data-type="link" class="interactable button" href="clock.html">Bad Clock</a>
         
         <div class="media-container interactable" data-type="link">
             <a href="https://i.imgur.com/4clqUdj.jpeg"><img src="https://i.imgur.com/4clqUdj.jpeg"></a>
