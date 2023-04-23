@@ -2,20 +2,24 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>Victor Yang</title>
+        <title>Victor</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         <script src="index.js"></script>
     </head>
 
     <body>
-        <div id="trailer"></div>
+        <div id="trailer">
+            <i id="trailer-icon" class="material-icons">touch_app</i>
+        </div>
 
-        <h1>Hi! My name is Victor</h1>
-        <p>I am a student </p>
+        <h1>Hi! My name is <span class="gradientText">Victor</span></h1>
+        <p>I'm not a webdev student</p>
 
-        <button type="button" onclick="contact()" id="contactButton">Contact</button>
-        <div id="contact">
-            <p>Github: @lluminate</p>
+        <button type="button" onclick="toggleContact()" data-clicked="false" data-type="button" id="contact" class="interactable">Contact</button>
+        
+        <div class="image-container">
+            <img src="https://i.imgur.com/4clqUdj.jpeg" class="interactable" data-type="link">
         </div>
         
     </body>

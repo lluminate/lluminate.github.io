@@ -1,12 +1,12 @@
 window.onload = () => {
   const trailer = document.getElementById("trailer");
 
-  window.onmousemove = e => {
+  const animateTrailer = (e, interacting) => {
     const x = e.clientX - trailer.offsetWidth / 2,
           y = e.clientY - trailer.offsetHeight / 2;
 
     const keyframes = {
-      transform: `translate(${x}px, ${y}px)`
+      transform: `translate(${x}px, ${y}px) scale(${interacting ? 2 : 1})`
     }
 
     trailer.animate(keyframes, {
@@ -14,9 +14,37 @@ window.onload = () => {
       fill: "forwards",
     });
   }
+
+  const getTrailersClass = type => {
+    switch (type) {
+      case "button":
+        return "touch_app";
+      case "video":
+        return "play_video";
+      default:
+        return "north_east";
+  }}
+
+  window.onmousemove = e => {
+    const interactable = e.target.closest(".interactable"),
+    interacting = interactable !== null;
+
+    const icon = document.getElementById("trailer-icon");
+
+    animateTrailer(e, interacting);
+
+    if (interacting) {
+      icon.innerHTML = getTrailersClass(interactable.dataset)  
+    }
+  }
 }
 
-function contact(){
-  document.getElementById("contact").style.display = "flex";
-  document.getElementById("contactButton").style.display = "none";
+
+
+function toggleContact() {
+  const contactButton = document.getElementById("contact");
+  const isClicked = contactButton.getAttribute("data-clicked") === "true";
+  const newButtonText = isClicked ? "Contact" : "Github: @lluminate";
+  contactButton.innerHTML = newButtonText;
+  contactButton.setAttribute("data-clicked", !isClicked);
 }

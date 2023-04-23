@@ -10,6 +10,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 
     user-select: none;
 }
@@ -26,6 +27,16 @@ h1{
     font-family: 'Karla', sans-serif;
 }
 
+h1 > .gradientText{
+    background: linear-gradient(
+        45deg,
+        #ee0979,#ff6a00
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
+}
+
 #trailer{
     height: 20px;
     width: 20px;
@@ -35,21 +46,29 @@ h1{
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 100000;
+    z-index: 1000;
 
     pointer-events: none;
     opacity: 0;
     transition: opacity 500ms ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#trailer-icon{
+    color:black;
+    font-size: 80%;
+    display: inline-block;
+    font-variation-settings:
+    'FILL' 0,
+     'wght' 400,
+     'GRAD' 200,
+     'opsz' 24;
 }
 
 #contact{
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#contactButton{
     background-color: rgb(20,20,20);
     color: white;
     border: 1px solid white;
@@ -58,5 +77,27 @@ h1{
     font-family: 'Karla', sans-serif;
 }
 
+img{
+    aspect-ratio: 1 / 1.5;
+    width: clamp(120px, 40vmin, 600px);
+    opacity: 0.4;
+    transition: opacity 400ms ease, transform 400ms ease;
+}
 
+img:hover{
+    transform: scale(1.05);
+    opacity: 0.8;
+}
 
+.image-container {
+    aspect-ratio: 1 / 1.5;
+    width: 300px;
+    overflow: hidden;
+}
+  
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
