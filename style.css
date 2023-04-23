@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla&family=Poltawski+Nowy&display=swap');
 
+*{
+    cursor: none;
+}
+
 body{
     background-color: rgb(20, 20, 20);
     color: white;
@@ -38,8 +42,8 @@ h1 > .gradientText{
 }
 
 #trailer{
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
     background-color: white;
     border-radius: 20px;
 
@@ -59,7 +63,7 @@ h1 > .gradientText{
 
 #trailer-icon{
     color:black;
-    font-size: 80%;
+    font-size: 30%;
     display: inline-block;
     font-variation-settings:'FILL' 0, 'wght' 400, 'GRAD' 200, 'opsz' 24;
 

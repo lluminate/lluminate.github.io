@@ -6,7 +6,7 @@ window.onload = () => {
           y = e.clientY - trailer.offsetHeight / 2;
 
     const keyframes = {
-      transform: `translate(${x}px, ${y}px) scale(${interacting ? 2 : 1})`
+      transform: `translate(${x}px, ${y}px) scale(${interacting ? 5 : 1})`
     }
 
     trailer.animate(keyframes, {
@@ -18,9 +18,11 @@ window.onload = () => {
   const getTrailersClass = type => {
     switch (type) {
       case "button":
-        return "touch_app";
+        return "pan_tool_alt";
       case "video":
         return "play_arrow";
+      case "image":
+        return "zoom_out_map";
       default:
         return "north_east";
   }}
