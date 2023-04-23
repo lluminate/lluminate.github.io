@@ -6,3 +6,7 @@ window.onmousemove = e => {
     
   trailer.style.transform = `translate(${x}px, ${y}px)`;
 }
+
+function myFunction(){
+  document.getElementById("paragraph").innerHTML = "I am a student at Burnaby South"
+}
