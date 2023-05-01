@@ -4,8 +4,9 @@
         <title>Bad Clock</title>
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-        <script src="clock.js"></script>
+        
         <script src="mousetrailer.js"></script>
+        <link rel="stylesheet" href="clock.css">
     </head>
     <body>
         <div id="trailer">
@@ -14,15 +15,10 @@
         <div id="cursor"></div>
         
         <h1>Bad Clock</h1>
+        <canvas id="canvas" width="2000px" height="2000px"></canvas>
+        
         <p>It's just a clock</p>
         <a href="index.html" data-type="link" class="interactable button">Back</a>
-
-        <div id="clock">
-            <div id="clock-face">
-                <div id="clock-hour"></div>
-                <div id="clock-minute"></div>
-                <div id="clock-second"></div>
-            </div>
-        </div>
+        <script src="clock.js"></script>
     </body>
 </html>

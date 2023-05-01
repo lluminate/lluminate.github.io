@@ -1,0 +1,5 @@
+canvas {
+  background-color:rgb(20, 20, 20);
+  height: min(50vh, 50vw);
+  width: min(50vh, 50vw);
+}

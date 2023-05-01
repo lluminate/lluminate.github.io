@@ -40,8 +40,8 @@ h1 > .gradientText{
         45deg,
         #ee0979,#ff6a00
     );
-    background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     white-space: nowrap;
 }
