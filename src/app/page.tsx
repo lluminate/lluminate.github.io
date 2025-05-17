@@ -1,6 +1,7 @@
-import {Mail, ExternalLink, FileText, Heart} from "lucide-react"
+import {ExternalLink, FileText, Heart} from "lucide-react"
 import ThemeToggle from "@/components/theme-toggle";
 import {Card, CardContent} from "@/components/ui/card";
+import EmailPopover from "@/components/email-popover";
 
 const year = new Date().getFullYear();
 
@@ -16,16 +17,14 @@ export default function Home() {
                         <CardContent className={"p-10 m-3"}>
                             <div className={"font-serif"}>
                                 <h1 className={"font-bold text-2xl mb-3"}>Victor Yang.</h1>
-                                <p className={"text-balance"}>
+                                <p className={"text-balance align-text-bottom"}>
                                     Get in touch via&nbsp;
                                     <a target={"_blank"} rel={"noopener noreferrer"} href={"https://www.linkedin.com/in/victor-y"}
                                        className={"underline"}>
                                         Linkedin <ExternalLink size={"1.1em"} className={"inline align-text-top"}/>
                                     </a>
                                     &nbsp;or&nbsp;
-                                    <a href={"mailto:victoryang2005@outlook.com"} className={"underline"}>
-                                        Email <Mail size={"1.1em"} className={"inline align-text-top"}/>
-                                    </a>
+                                    <EmailPopover/>
                                     , browse my projects on&nbsp;
                                     <a target={"_blank"} rel={"noopener noreferrer"} href={"https://www.github.com/lluminate"}
                                        className={"underline"}>
@@ -44,7 +43,7 @@ export default function Home() {
             </div>
             <footer className={"bottom-0"}>
                 <div className={"flex flex-col gap-2 items-center justify-center mt-10"}>
-                    <p className={"text-sm text-muted-foreground text-center"}>© {year} Victor Yang. Made with <Heart strokeWidth={0} size={"1em"} className={"inline align-text-bottom fill-current"}/> in Vancouver. </p>
+                    <p className={"text-sm text-muted-foreground text-center align-text-bottom"}>© {year} Victor Yang. Made with <Heart strokeWidth={0} size={"1.1em"} className={"inline align-text-bottom fill-current"}/> in Vancouver. </p>
                 </div>
             </footer>
         </div>
