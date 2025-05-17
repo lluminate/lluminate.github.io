@@ -1,20 +1,12 @@
 import {Mail, ExternalLink, FileText, Heart} from "lucide-react"
 import ThemeToggle from "@/components/theme-toggle";
-import Noise from "@/components/noise";
 import {Card, CardContent} from "@/components/ui/card";
+
+const year = new Date().getFullYear();
 
 export default function Home() {
     return (
         <div className={"px-6 py-20 min-h-svh flex flex-col justify-center bg-background text-foreground"}>
-            <div className={"fixed inset-0 pointer-events-none w-full h-full z-100"}>
-                <Noise
-                    patternSize={250}
-                    patternScaleX={1}
-                    patternScaleY={1}
-                    patternRefreshInterval={2}
-                    patternAlpha={15}
-                />
-            </div>
             <div className="fixed top-4 right-4">
                 <ThemeToggle />
             </div>
@@ -52,7 +44,7 @@ export default function Home() {
             </div>
             <footer className={"bottom-0"}>
                 <div className={"flex flex-col gap-2 items-center justify-center mt-10"}>
-                    <p className={"text-sm text-muted-foreground text-center"}>© 2025 Victor Yang. Made with <Heart strokeWidth={0} size={"1em"} className={"inline align-text-bottom fill-current"}/> in Vancouver. </p>
+                    <p className={"text-sm text-muted-foreground text-center"}>© {year} Victor Yang. Made with <Heart strokeWidth={0} size={"1em"} className={"inline align-text-bottom fill-current"}/> in Vancouver. </p>
                 </div>
             </footer>
         </div>
