@@ -19,8 +19,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <body>
             <ThemeProvider
                 attribute={"class"}
-                defaultTheme={"dark"}
+                defaultTheme={"system"}
                 disableTransitionOnChange
+                enableSystem
             >
                 <div className={"fixed inset-0 pointer-events-none w-full h-full z-100 overflow-hidden"}>
                     <Noise
