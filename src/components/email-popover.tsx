@@ -1,7 +1,7 @@
 "use client"
 
 import React, {useId, useRef, useState} from "react"
-import {CheckIcon, CopyIcon, Mail, Send} from "lucide-react"
+import {CheckIcon, CopyIcon, Send} from "lucide-react"
 import {cn} from "@/lib/utils"
 import {Input} from "@/components/ui/input"
 import {
