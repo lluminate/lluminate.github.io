@@ -44,7 +44,7 @@ export default function Home() {
             </div>
             <footer className={"bottom-0"}>
                 <div className={"flex flex-col gap-2 items-center justify-center mt-10"}>
-                    <p className={"text-sm text-muted-foreground text-center align-text-bottom"}>&copy; {new Date().getFullYear()} Victor Yang. Made with <span className={"text-lg dark:sepia dark:brightness-75"}>🍻</span> in Vancouver. </p>
+                    <p className={"text-sm text-muted-foreground text-center align-text-bottom"}>&copy; {new Date().getFullYear()} Victor Yang.</p>
                 </div>
             </footer>
         </div>
