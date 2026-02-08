@@ -44,7 +44,7 @@ export default function Home() {
             </div>
             <footer className={"bottom-0"}>
                 <div className={"flex flex-col gap-2 items-center justify-center mt-10"}>
-                    <p className={"text-sm text-muted-foreground text-center align-text-bottom"}>&copy; {new Date().getFullYear()} Victor Yang.</p>
+                    <p className={"text-sm text-muted-foreground text-center align-text-bottom"}>&copy; 2026 Victor Yang.</p>
                 </div>
             </footer>
         </div>
