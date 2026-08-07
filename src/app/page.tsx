@@ -4,7 +4,7 @@ import EmailPopover from "@/components/email-popover";
 
 export default function Home() {
     return (
-        <div className={"flex min-h-full flex-col justify-center px-6 py-20"}>
+        <div className={"flex flex-1 flex-col items-center justify-center px-6 py-20"}>
             <div className={"w-full max-w-fit mx-auto"}>
                 <div className={"flex flex-col gap-6"}>
                     <Card className={"shadow-2xl rounded-3xl border-transparent dark:border-border/64"}>
