@@ -7,13 +7,6 @@ import Noise from "@/components/noise";
 export const metadata: Metadata = {
     title: "Victor Yang",
     description: "Victor's Portfolio",
-    icons: {
-        icon: [
-            { url: "/favicon-light.ico", media: "(prefers-color-scheme: light)" },
-            { url: "/favicon-dark.ico", media: "(prefers-color-scheme: dark)" },
-            { url: "/favicon.ico" },
-        ],
-    },
 };
 
 interface RootLayoutProps {
