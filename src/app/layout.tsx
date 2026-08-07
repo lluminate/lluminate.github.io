@@ -16,7 +16,7 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps) {
     return (
         <html lang="en" suppressHydrationWarning>
-        <body>
+        <body className="bg-background text-foreground antialiased">
             <ThemeProvider
                 attribute={"class"}
                 defaultTheme={"system"}
@@ -32,7 +32,22 @@ export default function RootLayout({ children }: RootLayoutProps) {
                         patternAlpha={12}
                     />
                 </div>
-                {children}
+
+                <div className="fixed top-4 right-4 z-50">
+                    <ThemeToggle />
+                </div>
+
+                <div className="flex min-h-svh flex-col">
+                    <main className="flex-1">
+                        {children}
+                    </main>
+
+                    <footer className={"w-full py-6"}>
+                        <div className={"flex flex-col gap-2 items-center justify-center mt-10"}>
+                            <p className={"text-sm text-muted-foreground text-center align-text-bottom"}>&copy; 2026 Victor Yang.</p>
+                        </div>
+                    </footer>
+                </div>
             </ThemeProvider>
         </body>
         </html>

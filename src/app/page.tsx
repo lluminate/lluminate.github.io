@@ -5,10 +5,7 @@ import EmailPopover from "@/components/email-popover";
 
 export default function Home() {
     return (
-        <div className={"px-6 py-20 min-h-svh flex flex-col justify-center bg-background text-foreground"}>
-            <div className="fixed top-4 right-4">
-                <ThemeToggle />
-            </div>
+        <div className={"flex min-h-full flex-col justify-center px-6 py-20"}>
             <div className={"w-full max-w-fit mx-auto"}>
                 <div className={"flex flex-col gap-6"}>
                     <Card className={"shadow-2xl rounded-3xl border-transparent dark:border-border/64"}>
@@ -42,11 +39,6 @@ export default function Home() {
                     </Card>
                 </div>
             </div>
-            <footer className={"bottom-0"}>
-                <div className={"flex flex-col gap-2 items-center justify-center mt-10"}>
-                    <p className={"text-sm text-muted-foreground text-center align-text-bottom"}>&copy; 2026 Victor Yang.</p>
-                </div>
-            </footer>
         </div>
     );
 }
