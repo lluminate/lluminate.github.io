@@ -1,5 +1,4 @@
-import {Undo2} from "lucide-react"
-import ThemeToggle from "@/components/theme-toggle";
+import {Undo2} from "lucide-react";
 import {Card, CardContent} from "@/components/ui/card";
 import Link from "next/link";
 

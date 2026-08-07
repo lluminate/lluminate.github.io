@@ -3,6 +3,7 @@ import type {ReactNode} from "react";
 import "./globals.css";
 import {ThemeProvider} from "@/components/theme-provider";
 import Noise from "@/components/noise";
+import ThemeToggle from "@/components/theme-toggle";
 
 export const metadata: Metadata = {
     title: "Victor Yang",

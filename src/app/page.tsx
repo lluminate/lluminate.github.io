@@ -1,5 +1,4 @@
-import {ExternalLink, FileText, Mail} from "lucide-react"
-import ThemeToggle from "@/components/theme-toggle";
+import {ExternalLink, FileText, Mail} from "lucide-react";
 import {Card, CardContent} from "@/components/ui/card";
 import EmailPopover from "@/components/email-popover";
 
