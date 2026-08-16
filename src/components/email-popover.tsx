@@ -20,7 +20,7 @@ export default function EmailPopover({children, className}: { children?: React.R
     const id = useId()
     const [copied, setCopied] = useState<boolean>(false)
     const inputRef = useRef<HTMLInputElement>(null)
-    const email = "victoryang2005@outlook.com"
+    const email = "contact.victoryang@gmail.com"
 
     const handleCopy = () => {
         if (inputRef.current) {
